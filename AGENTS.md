@@ -34,6 +34,7 @@ Archiv obsahuje skutečná jména a telefony asi 1 700 lidí.
 | `v2/` | prototyp nového adresáře: `server.py` (jen standardní knihovna Pythonu + SQLite), `static/` frontend |
 | `.github/workflows/` | `pages.yml` (push do `main` → kontrola → nasazení dema), `check.yml` (kontrola na PR a ostatních větvích) |
 | `BRAINSTORM.md` | co byl starý web, nápady A až E, otevřené otázky |
+| `web/` | **návrh nové verze**: klikací prototyp (vanilla HTML/CSS/JS, smyšlená data), viz `web/README.md`. `ochrana-soukromi.html` se generuje přes `tools/gdpr_page.py` |
 | `docs/struktura-webu.md` | **zadání nové verze**: stránky, hlavička, patička, seznam a filtry, detail, profil, nastavení, rozhodnutí a otevřené otázky |
 | `docs/gdpr-zasady-a-souhlas.md` | zásady ochrany osobních údajů, texty souhlasu při registraci, technická opatření (pracovní kopie Word dokumentu, upravuje se tady) |
 
@@ -72,17 +73,21 @@ Skutečná data: tři příkazy v README (`cdx_list.py`, `download.py`, `extract
 - `v2/` je funkční prototyp: přihlášení odkazem, profily, převzetí archivního záznamu („To jsem já“), projekty, štábová listina (tisk, CSV, JSON), API s Bearer klíčem, audit log. Na Pages neběží.
 - Firebase ani jiná cloudová služba se zatím nepoužívá, záměrně.
 - **Nový směr (20. 11. 2026, větev `frontend`):** zadání v `docs/struktura-webu.md`, GDPR texty v `docs/gdpr-zasady-a-souhlas.md` jsou s ním sladěné. `v2/` zatím zadání neodpovídá (viz kap. 7).
+- **Návrh nové verze `web/` (20. 11. 2026):** klikací prototyp celého zadání (kap. 7) se smyšlenými daty, viz `web/README.md`. Nemá server, všechno drží v `localStorage`. Dalším krokem je napojení na skutečný backend.
 
 ## 7. Zadání nové verze (shrnutí `docs/struktura-webu.md`)
 
-- **Rozsah:** neveřejný adresář jen **studentů FAMU** (ne celá AMU, ne zaměstnanci). Absolventi zůstávají, zatím bez odlišení.
-- **Údaje u člověka, nic víc:** jméno, pohlaví (dobrovolné, žena / muž / jiné / neuvádím, účel obsazování rolí), ročník (= rok nástupu, např. 2024/25), katedra, e-mail (školní), telefon (dobrovolný). Bez fotky.
-- **Stránky:** statická homepage · přihlášení odkazem na školní e-mail · první přihlášení (krok 1 pravidla, krok 2 profil a souhlasy) · seznam `/lide` (vlevo katedry s počty, vpravo studenti po ročnících od nejnovějšího, textové hledání bez diakritiky, filtry katedra, ročník, pohlaví) · detail studenta (telefon a e-mail až tady, ne v seznamu) · úprava profilu · nastavení (souhlasy, skrýt / smazat profil, stažení vlastních dat) · `/ochrana-soukromi`.
-- **Hlavička po přihlášení:** vlevo logo a menu, vpravo kolečko s iniciálami a šipka, rozbalí nabídku Upravit profil / Nastavení / Odhlásit.
-- **Patička na každé stránce** s odkazem na ochranu soukromí (GDPR), nahlášení zneužití a kontakt na správce.
+- **Rozsah:** neveřejný adresář jen **studentů FAMU** (v seznamu jen ti, kdo zveřejnili profil). Absolventi zůstávají, zatím bez odlišení.
+- **Přístup:** e-mail **@famu.cz nebo @st.amu.cz** (přesná shoda domény). Účet jde mít i **bez profilu**, jen na prohlížení (pedagogové, kdo nechce nic sdílet).
+- **Údaje u člověka, nic víc:** jméno, pohlaví (dobrovolné, žena / muž / jiné / neuvádím, bez vysvětlujícího textu), ročník (= rok nástupu, tvar 2026/2027, výběr od 1946/1947), studijní obor (16 oborů: sekce z archivu + Herní design a Montage, viz `web/data.js`; v kódu pole `dept`), e-mail (školní), telefon (dobrovolný, předvolba ze seznamu zemí s vlajkami, ukládá se i kód země). Bez fotky.
+- **Stránky:** statická homepage · přihlášení odkazem na školní e-mail · první přihlášení (krok 1 pravidla, krok 2 stejně výrazná volba „Vytvořit profil“ / „Jen prohlížet“) · seznam `/lide` (vlevo studijní obory s počty, vpravo studenti po ročnících od nejnovějšího, textové hledání bez diakritiky, filtry studijní obor, ročník, pohlaví) · detail studenta (telefon a e-mail až tady, ne v seznamu) · úprava profilu · nastavení (souhlasy, skrýt / smazat profil, stažení vlastních dat) · `/ochrana-soukromi`.
+- **Role:** každý účet má roli `user` (výchozí) nebo `admin`, patří k účtu, ne k profilu. Admin má v liště „Administrace“: `/admin` seznam všech účtů s filtry, `/admin/uzivatel/{id}` (role, blokace, změna e-mailu se stejnou kontrolou domény jako registrace a unikátností, změna a mazání telefonu, oprava a mazání ostatních údajů, smazání profilu i účtu), `/admin/zaznam` záznam změn. Každý zásah potřebuje důvod a loguje se. Admin nemůže zapnout souhlas za uživatele ani zobrazit profil, který skryl uživatel. Musí zůstat aspoň jeden admin.
+- **Hlavička po přihlášení:** vlevo logo a menu (Lidé, u admina i Administrace s počtem nových nahlášení), vpravo kolečko s iniciálami a šipka, rozbalí nabídku Upravit profil / Nastavení / (Administrace) / Odhlásit.
+- **Patička na každé stránce** s odkazem na ochranu soukromí (GDPR), nahlášení zneužití (`app.html#/nahlasit`, funguje i bez přihlášení) a kontakt na správce.
+- **Nahlášení zneužití:** formulář u profilu (dialog) i stránka `/nahlasit`, oba s povinným e-mailem pro odpověď. V administraci `/admin/hlaseni` (Nová / Vyřešená / Všechna, počet nových v liště) a detail `/admin/hlaseni/{id}` s odpovědí e-mailem, uzavřením bez odpovědi a znovuotevřením, vše v záznamu změn.
 - **Z v2 se nepřebírá:** projekty, štábové listiny, CSV/JSON export, API klíče, archiv starých Famáků (ani import do adresáře), alergie, role ve štábu, showreel, poznámka.
-- **GDPR pravidla pro kód:** souhlasy nikdy předem zaškrtnuté, každý volitelný údaj má vlastní souhlas, evidence souhlasu (kdo, kdy, verze podmínek, rozsah), žádný hromadný export, zobrazení kontaktu se loguje, kontrola domény na serveru přesnou shodou, roční připomínka bez automatického skrytí.
-- **Otevřené:** povolené e-mailové domény FAMU (ověřit u IT AMU), přesný seznam kateder v levém menu, kdo je správce údajů, ověření totožnosti absolventa při žádosti o smazání, zastarávání telefonů absolventů.
+- **GDPR pravidla pro kód:** souhlasy nikdy předem zaškrtnuté, každý volitelný údaj má vlastní souhlas, evidence souhlasu (kdo, kdy, verze podmínek, rozsah), role ověřovat na serveru u každého požadavku, žádný hromadný export, zobrazení kontaktu se loguje, kontrola domény na serveru přesnou shodou, roční připomínka bez automatického skrytí.
+- **Otevřené:** kdo bude admin, zda @st.amu.cz nemají i studenti DAMU a HAMU (ověřit u IT AMU), kdo je správce údajů, ověření totožnosti absolventa při žádosti o smazání, zastarávání telefonů absolventů.
 
 ## 8. Otevřené otázky (rozhoduje Martin, nestav bez jeho souhlasu)
 

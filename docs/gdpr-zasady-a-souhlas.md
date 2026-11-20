@@ -1,5 +1,7 @@
 <!-- Pracovní kopie dokumentu „Famáci 2.0 – Zásady ochrany osobních údajů a souhlas.docx“ (převedeno 2026-11-20). Upravujeme tady.
-     2026-11-20: rozsah upraven podle docs/struktura-webu.md (jen studenti FAMU, pohlaví místo fotky a dalšího e-mailu, absolventi zůstávají). -->
+     2026-11-20: rozsah upraven podle docs/struktura-webu.md (jen studenti FAMU, pohlaví místo fotky a dalšího e-mailu, absolventi zůstávají).
+     2026-11-20: role uživatel a admin, administrace a záznam změn.
+     2026-11-20: domény @famu.cz a @st.amu.cz, účet bez profilu jen na prohlížení (např. pedagogové). -->
 
 ## Famáci 2.0 – Zásady ochrany osobních údajů a souhlas
 
@@ -11,10 +13,10 @@ Původní Famáci je veřejně přístupný seznam jmen a telefonních čísel s
 
 | Vlastnost | Původní Famáci | Famáci 2.0 |
 |---|---|---|
-| Kdo data vidí | kdokoli na internetu, indexují to vyhledávače | jen přihlášení studenti a absolventi s ověřeným e-mailem FAMU |
+| Kdo data vidí | kdokoli na internetu, indexují to vyhledávače | jen přihlášení uživatelé s ověřeným e-mailem @famu.cz nebo @st.amu.cz; v adresáři jsou jen ti, kdo zveřejnili profil |
 | Jak se člověk dostane do seznamu | ručně ho doplní správce stránky (pravděpodobně) | sám si vytvoří profil a udělí souhlas |
-| Údaje | jméno, telefon, někdy e-mail | jméno, školní e-mail, katedra, ročník (rok nástupu), volitelně telefon a pohlaví |
-| Členění | stránka za katedru (kr, kk, kdt, kat, kss, kzt, kp, kf, CINKK, MONTAGE, FAMU International), uvnitř nadpisy po ročnících | seznam podle kateder, řazený podle ročníků, hledání a filtry katedra, ročník, pohlaví |
+| Údaje | jméno, telefon, někdy e-mail | jméno, školní e-mail, studijní obor, ročník (rok nástupu), volitelně telefon a pohlaví |
+| Členění | stránka za katedru (kr, kk, kdt, kat, kss, kzt, kp, kf, CINKK, MONTAGE, FAMU International), uvnitř nadpisy po ročnících | seznam podle studijních oborů, řazený podle ročníků, hledání a filtry studijní obor, ročník, pohlaví |
 | Kdo je zahrnut | jen studenti FAMU | studenti FAMU, absolventi v adresáři zůstávají |
 | Aktuálnost | ročníky zhruba 2010/11 až 2024/25, staré údaje se nemažou | každý si údaje spravuje sám, roční připomínka ke kontrole, smazání kdykoli |
 | Informace o zpracování (GDPR) | nenalezena | povinná a odsouhlasená při registraci |
@@ -35,7 +37,7 @@ Adresář může stavět na souhlasu podle čl. 6 odst. 1 písm. a) GDPR, pokud 
 | GDPR čl. 12–14 | před sběrem údajů srozumitelná informace: správce, účel, právní základ, příjemci, doba uložení, práva, stížnost u ÚOOÚ |
 | GDPR čl. 15–22 | právo na přístup, opravu, výmaz, omezení, přenositelnost a námitku; odpověď do 1 měsíce |
 | GDPR čl. 25, 28, 30, 32–34 | ochrana dat už v návrhu, smlouvy se zpracovateli (hosting), záznamy o zpracování, zabezpečení, hlášení úniku do 72 hodin |
-| GDPR čl. 5 odst. 1 písm. c) a čl. 9 | minimalizace údajů: adresář sbírá jen jméno, katedru, ročník, e-mail, telefon a pohlaví, fotky ne; pohlaví nepatří mezi zvláštní kategorie podle čl. 9, přesto je dobrovolné, s vlastním souhlasem a volbou „neuvádím“ a slouží jen k obsazování rolí |
+| GDPR čl. 5 odst. 1 písm. c) a čl. 9 | minimalizace údajů: adresář sbírá jen jméno, studijní obor, ročník, e-mail, telefon a pohlaví, fotky ne; pohlaví nepatří mezi zvláštní kategorie podle čl. 9, přesto je dobrovolné, s vlastním souhlasem a volbou „neuvádím“ |
 | GDPR čl. 37 | AMU jako veřejná vysoká škola má pověřence; je-li správcem AMU, musí být v podmínkách jeho kontakt |
 | EDPB Guidelines 05/2020 o souhlasu | výklad dobrovolnosti, granularity a odvolání; souhlas není dobrovolný při nerovnováze sil, proto nesmí být vyžadován školou ani nadřízeným |
 | Zákon č. 110/2019 Sb., o zpracování osobních údajů, § 7 | souhlas se službami informační společnosti může dát sám člověk od 15 let; u studentů FAMU prakticky bez dopadu |
@@ -61,25 +63,27 @@ Famáci 2.0 je [neoficiální studentský projekt / služba provozovaná AMU]. [
 
 2. K čemu web slouží
 
-Famáci 2.0 je neveřejný adresář kontaktů studentů a absolventů Filmové a televizní fakulty Akademie múzických umění v Praze (FAMU). Slouží k tomu, aby se lidé z FAMU mohli navzájem najít a spojit kvůli studiu a spolupráci na filmových a dalších projektech, včetně obsazování rolí. Údaje nepoužíváme k žádnému jinému účelu, neprodáváme je a neposíláme vám reklamu.
+Famáci 2.0 je neveřejný adresář kontaktů studentů a absolventů Filmové a televizní fakulty Akademie múzických umění v Praze (FAMU). Slouží k tomu, aby se lidé z FAMU mohli navzájem najít a spojit kvůli studiu a spolupráci na filmových a dalších projektech. Údaje nepoužíváme k žádnému jinému účelu, neprodáváme je a neposíláme vám reklamu.
 
 3. Jaké údaje zpracováváme a proč
 
 | Údaje | Povinné? | Kdo je vidí | Právní základ |
 |---|---|---|---|
 | Školní e-mail, datum registrace, ověření e-mailu a posledního přihlášení (uživatelský účet) | ano, pro přihlášení | jen správce | plnění podmínek užívání, čl. 6 odst. 1 písm. b) GDPR |
-| Jméno a příjmení, školní e-mail, katedra, ročník (rok nástupu) | ano, chcete-li mít profil v adresáři | přihlášení uživatelé | váš souhlas, čl. 6 odst. 1 písm. a) GDPR |
+| Jméno a příjmení, školní e-mail, studijní obor, ročník (rok nástupu) | ano, chcete-li mít profil v adresáři | přihlášení uživatelé | váš souhlas, čl. 6 odst. 1 písm. a) GDPR |
 | Telefonní číslo | ne | přihlášení uživatelé | váš souhlas |
-| Pohlaví (žena / muž / jiné / neuvádím), slouží k obsazování rolí | ne | přihlášení uživatelé | váš souhlas |
+| Pohlaví (žena / muž / jiné / neuvádím) | ne | přihlášení uživatelé | váš souhlas |
 | Záznam o udělení a odvolání souhlasu (datum, čas, verze podmínek, rozsah) | ano | jen správce | oprávněný zájem prokázat souhlas, čl. 6 odst. 1 písm. f) GDPR |
 | Technické záznamy (IP adresa, časy přihlášení, které profily byly zobrazeny) | ano | jen správce | oprávněný zájem na bezpečnosti webu a odhalení zneužití kontaktů, čl. 6 odst. 1 písm. f) GDPR |
+| Nahlášení zneužití (popis, e-mail pro odpověď, koho se týká, odpověď správce) | jen pokud něco nahlásíte | jen správce | oprávněný zájem na ochraně uživatelů před zneužitím kontaktů, čl. 6 odst. 1 písm. f) GDPR |
+| Záznam o zásazích administrátora (kdo, kdy, co změnil, důvod) | ano | jen správce | oprávněný zájem na kontrole práce administrátorů a prokázání, jak byly žádosti vyřízeny, čl. 6 odst. 1 písm. f) GDPR |
 
-Web můžete používat i bez vlastního profilu v adresáři. Udělení souhlasu je dobrovolné a jeho neudělení nemá žádný vliv na vaše studium na FAMU. Údaje nepřebíráme ze studijního systému, z jiných evidencí AMU ani z původního webu Famáci – v adresáři je jen to, co sami vyplníte. Fotografie adresář nesbírá.
+Web můžete používat i bez vlastního profilu v adresáři, jen na prohlížení (hodí se například pro pedagogy). U takového účtu ukládáme jen údaje z prvního řádku tabulky a v adresáři vás nikdo neuvidí. Udělení souhlasu je dobrovolné a jeho neudělení nemá žádný vliv na vaše studium na FAMU. Údaje nepřebíráme ze studijního systému, z jiných evidencí AMU ani z původního webu Famáci – v adresáři je jen to, co sami vyplníte. Fotografie adresář nesbírá.
 
 4. Kdo má k údajům přístup
 
-- Přihlášení uživatelé – pouze osoby, které se zaregistrovaly a kliknutím na ověřovací odkaz potvrdily školní e-mail FAMU [@famu.cz, případně další domény FAMU po ověření u IT AMU]. Registrace s jiným e-mailem není možná. Adresář není veřejný a vyhledávače ho neindexují.
-- Správce a jménem určené osoby, které web provozují: [jména nebo role].
+- Přihlášení uživatelé – pouze osoby, které se zaregistrovaly a kliknutím na ověřovací odkaz potvrdily školní e-mail na doméně famu.cz nebo st.amu.cz (studenti, absolventi i pedagogové, kteří si založili účet). Registrace s jiným e-mailem není možná. Adresář není veřejný a vyhledávače ho neindexují.
+- Správce a jménem určené osoby, které web provozují: [jména nebo role]. V aplikaci mají roli administrátor: vidí všechny účty včetně účtů bez profilu (přihlašovací e-mail, data registrace a posledního přihlášení, stav souhlasů), mohou opravit nebo smazat údaje (včetně přihlašovacího e-mailu a telefonu), skrýt profil, zablokovat nebo smazat účet. Každý zásah se zaznamenává i s důvodem a o změně vašich údajů vás informujeme e-mailem. Souhlas za vás udělit nemohou.
 - Zpracovatelé, kteří pro nás zajišťují techniku: hosting [poskytovatel, země], odesílání e-mailů [poskytovatel] (ověřovací a přihlašovací odkazy). S každým máme uzavřenou smlouvu o zpracování podle čl. 28 GDPR.
 - Údaje ukládáme v Evropské unii. Pokud by některý zpracovatel předával údaje mimo EU/EHP, děje se tak jen na základě záruk podle kapitoly V GDPR (rozhodnutí o odpovídající ochraně nebo standardní smluvní doložky).
 - Orgánům veřejné moci předáme údaje jen tehdy, ukládá-li nám to zákon.
@@ -88,12 +92,12 @@ Web můžete používat i bez vlastního profilu v adresáři. Udělení souhlas
 
 Přihlášením se zavazujete, že kontakty z adresáře:
 
-- použijete jen ke komunikaci související se studiem nebo tvůrčí spoluprací, včetně obsazování rolí;
+- použijete jen ke komunikaci související se studiem nebo tvůrčí spoluprací;
 - nebudete kopírovat, exportovat ani strojově stahovat a nepředáte je nikomu mimo FAMU;
 - nepoužijete k reklamě, hromadným zprávám, nabízení služeb, politické kampani ani k obtěžování;
 - do svého profilu vložíte jen vlastní údaje.
 
-Při porušení pravidel může správce uživateli zablokovat přístup. Zneužití kontaktu můžete nahlásit na [e-mail].
+Při porušení pravidel může správce uživateli zablokovat přístup. Zablokovaný uživatel se nepřihlásí, jeho profil není vidět a důvod blokace uvidí při pokusu o přihlášení. Zneužití kontaktu nebo profil s cizími údaji můžete nahlásit formulářem „Nahlásit zneužití“ (odkaz je v patičce každé stránky a u každého profilu, funguje i bez přihlášení) nebo na [e-mail]. Ve formuláři uvedete e-mail, na který vám správce odpoví.
 
 6. Jak dlouho údaje uchováváme
 
@@ -102,6 +106,8 @@ Při porušení pravidel může správce uživateli zablokovat přístup. Zneuž
 - Uživatelský účet (údaje pro přihlášení): po dobu existence profilu; kdo profil nemá, tomu účet smažeme 12 měsíců od posledního přihlášení.
 - Technické záznamy: 6 měsíců. Neověřená registrace (nikdo neklikl na ověřovací odkaz): 7 dní.
 - Záznam o souhlasu: po dobu trvání souhlasu a 3 roky po jeho odvolání (pro případ sporu).
+- Záznam o zásazích administrátora: 3 roky od zásahu.
+- Nahlášení zneužití: 1 rok od vyřízení.
 - Zálohy: smazané údaje z nich zmizí nejpozději do 30 dnů.
 
 7. Odvolání souhlasu
@@ -141,15 +147,15 @@ Krok 1 – Registrace a ověření e-mailu (povinné)
 
 Váš školní e-mail [pole]
 
-Registrovat se můžete jen se školním e-mailem FAMU: [@famu.cz, případně další domény FAMU po ověření u IT AMU].
+Registrovat se můžete jen se školním e-mailem FAMU: @famu.cz nebo @st.amu.cz.
 
-☐ Přečetl/a jsem si [Informace o zpracování osobních údajů a pravidla užívání] a zavazuji se kontakty z adresáře používat jen ke komunikaci související se studiem nebo tvůrčí spoluprací, včetně obsazování rolí, nekopírovat je a nepředávat nikomu mimo FAMU.
+☐ Přečetl/a jsem si [Informace o zpracování osobních údajů a pravidla užívání] a zavazuji se kontakty z adresáře používat jen ke komunikaci související se studiem nebo tvůrčí spoluprací, nekopírovat je a nepředávat nikomu mimo FAMU.
 
 [Odeslat ověřovací odkaz]
 
 Chybová hláška pro jinou doménu:
 
-Tento e-mail nelze použít. Famáci 2.0 je jen pro studenty FAMU – zadejte školní adresu [@famu.cz, případně další domény FAMU po ověření u IT AMU].
+Tento e-mail nelze použít. Famáci 2.0 jsou jen pro lidi z FAMU – zadejte školní adresu @famu.cz nebo @st.amu.cz.
 
 Po odeslání formuláře:
 
@@ -161,15 +167,15 @@ Dobrý den, někdo (nejspíš vy) zadal tuto adresu při registraci na Famáci 2
 
 Krok 2 – Můj profil v adresáři (dobrovolné)
 
-Chcete, aby vás ostatní z FAMU našli? Vaše údaje uvidí pouze přihlášení uživatelé s ověřeným školním e-mailem FAMU. Souhlas můžete kdykoli odvolat v nastavení profilu.
+Chcete, aby vás ostatní z FAMU našli? Vaše údaje uvidí pouze přihlášení uživatelé s ověřeným e-mailem @famu.cz nebo @st.amu.cz. Pokud nechcete nic sdílet, zvolte „Jen prohlížet“ a adresář budete používat bez profilu. Souhlas můžete kdykoli odvolat v nastavení profilu.
 
-☐ Souhlasím se zveřejněním svého profilu – jména a příjmení, školního e-mailu, katedry a ročníku – pro přihlášené uživatele webu Famáci 2.0, a to za účelem vzájemného kontaktu v rámci FAMU. Profil zůstane v adresáři i po skončení studia, dokud souhlas neodvolám.
+☐ Souhlasím se zveřejněním svého profilu – jména a příjmení, školního e-mailu, studijního oboru a ročníku – pro přihlášené uživatele webu Famáci 2.0, a to za účelem vzájemného kontaktu v rámci FAMU. Profil zůstane v adresáři i po skončení studia, dokud souhlas neodvolám.
 
 Pokud jste zaškrtli první políčko, můžete přidat:
 
 ☐ Souhlasím se zveřejněním svého telefonního čísla [pole pro číslo] pro přihlášené uživatele.
 
-☐ Souhlasím se zveřejněním svého pohlaví [žena / muž / jiné] pro přihlášené uživatele, aby mě bylo možné najít při obsazování rolí. (Výchozí volba je „neuvádím“.)
+☐ Souhlasím se zveřejněním svého pohlaví [žena / muž / jiné] pro přihlášené uživatele. (Výchozí volba je „neuvádím“.)
 
 ☐ Souhlasím se zveřejněním svého dalšího e-mailu [pole] pro přihlášené uživatele.
 
@@ -193,7 +199,8 @@ Podmínky platí jen tehdy, když je web opravdu tak postavený. Následující 
 
 Registrace a ověření e-mailu
 
-- Registrovat se jde jen se školním e-mailem FAMU [@famu.cz, případně další domény FAMU po ověření u IT AMU]. Jiné domény formulář odmítne.
+- Registrovat se jde jen se školním e-mailem @famu.cz nebo @st.amu.cz. Jiné domény formulář odmítne.
+- Účet bez profilu: po ověření e-mailu si uživatel zvolí „Jen prohlížet“ (stejně výrazné jako „Vytvořit profil“). Uloží se jen přihlašovací e-mail a technické údaje, v adresáři se nezobrazuje. Profil si může založit kdykoli později.
 - Kontrola domény musí probíhat na serveru, ne jen v prohlížeči: adresu převést na malá písmena, vzít část za posledním „@“ a porovnat přesnou shodou se seznamem. Kontrola typu „končí na famu.cz“ je chyba – prošla by třeba cizí doména fakefamu.cz.
 - Po odeslání formuláře web pošle ověřovací e-mail s odkazem. Odkaz obsahuje jednorázový náhodný token (alespoň 128 bitů), platí 24 hodin a v databázi je uložen jen jeho hash. Dokud uživatel na odkaz neklikne, nemá přístup do adresáře a nemůže zveřejnit profil.
 - Doporučené další přihlašování: znovu odkazem na školní e-mail (bez hesla), přihlášení platí nejvýše 30 dní. Přístup tak má jen ten, kdo má právě přístup do školní schránky. Pokud budou hesla, tak uložená algoritmem Argon2 nebo bcrypt.
@@ -222,14 +229,29 @@ Provoz a dodavatelé
 - Vést jednoduchý záznam o činnostech zpracování (čl. 30 GDPR) a postup pro hlášení úniku dat ÚOOÚ do 72 hodin (čl. 33).
 - DPIA (posouzení vlivu, čl. 35) pravděpodobně není povinné, ale krátké písemné vyhodnocení rizik se vyplatí – adresář tisíců telefonních čísel je atraktivní cíl.
 
+Role a administrace
+
+- Dvě role: uživatel (výchozí po registraci) a admin. Role patří k účtu, ne k profilu.
+- Admin vidí seznam všech účtů (i těch bez profilu), může opravit jméno, studijní obor a ročník, změnit přihlašovací e-mail a telefon, smazat telefon nebo pohlaví, skrýt a znovu zobrazit profil (zobrazit jen ten, který skryl admin), smazat profil, zablokovat, odblokovat a smazat účet a měnit role.
+- Nový e-mail musí splňovat stejná pravidla jako při registraci: jen @famu.cz nebo @st.amu.cz s přesnou kontrolou domény na serveru a jen adresa, která ještě nemá jiný účet. Upozornění na změnu přijde na starou i novou adresu.
+- Telefon může admin změnit jen u profilu, kde ho uživatel zveřejnil. Přidat číslo tam, kde žádné není, nemůže, protože k tomu chybí souhlas.
+- Admin nemůže za uživatele udělit souhlas ani zveřejnit údaj, který uživatel sám nezveřejnil. Profil, který skryl uživatel, může znovu zobrazit jen on.
+- Každý zásah vyžaduje důvod a zapisuje se do záznamu změn (kdo, kdy, co, u kterého účtu, proč). Záznam nejde upravit ani smazat a uchovává se 3 roky.
+- Nahlášení zneužití chodí do administrace (seznam Nová / Vyřešená). Formulář je i bez přihlášení a vyžaduje e-mail pro odpověď. Admin odpoví přímo z administrace (odpověď odejde e-mailem a uloží se k nahlášení), nebo nahlášení uzavře bez odpovědi s důvodem. Obojí se zapíše do záznamu změn.
+- Musí zůstat aspoň jeden aktivní admin. Roli admin dostávají jen jmenovití správci a přihlašují se dvoufaktorově.
+- Roli je nutné kontrolovat na serveru u každého požadavku, skrytý odkaz v rozhraní nestačí.
+- Když admin změní nebo smaže údaje uživatele, uživatel dostane e-mail.
+
 ### Otevřené body před spuštěním
 
 Nejdůležitější je rozhodnout, kdo bude správcem – od toho se odvíjí záhlaví podmínek, odpovědnost i to, zda AMU umožní přihlášení školním účtem.
 
 - ☐ Kdo je správce: fyzická osoba, studentský spolek (doporučeno – oddělí osobní odpovědnost), nebo AMU sáma?
-- ☐ Ověřit u IT AMU, jaké domény školních e-mailů studenti FAMU mají (jen famu.cz, nebo i jiné), kdo všechno na nich má adresu (např. externí spolupracovníci) a kdy po studiu schránka zaniká, a zda filtry AMU nebudou ověřovací e-maily zachytávat jako spam.
+- ☑ Domény: rozhodnuto, přístup mají adresy @famu.cz a @st.amu.cz.
+- ☐ Ověřit u IT AMU, zda adresy @st.amu.cz nemají i studenti DAMU a HAMU (pak by se mohli registrovat i oni), kdo všechno má adresu @famu.cz (např. externí spolupracovníci), kdy po studiu schránka zaniká a zda filtry AMU nebudou ověřovací e-maily zachytávat jako spam.
 - ☐ Konzultovat podmínky s pověřencem pro ochranu osobních údajů AMU – i když správcem AMU nebude, web staví na jejích e-mailových adresách a jménu.
 - ☐ Vybrat hosting v EU a sepsat seznam zpracovatelů do oddílu 4.
+- ☐ Kdo bude mít roli admin (jmenovitě) a do kdy se vyřizují nahlášení zneužití (návrh: do 7 dnů).
 - ☑ Absolventi: rozhodnuto, v adresáři zůstávají; po zániku školní schránky se profil upravuje a maže jen žádostí e-mailem.
 - ☐ Jak ověřit totožnost absolventa, který žádá o smazání nebo úpravu e-mailem bez přístupu ke školní schránce (např. SMS kód na telefon z profilu)?
 - ☐ Přesnost údajů u absolventů: telefonní čísla se po letech mění a operátor je může přidělit někomu jinému. Zvážit, zda po několika letech bez reakce na roční připomínku profil přece jen skrýt, nebo aspoň zobrazit „údaje naposledy potvrzeny v roce …“.

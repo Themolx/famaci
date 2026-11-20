@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
+<title>Famáci 2.0</title>
+<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="countries.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body class="app">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="bar" id="bar"></header>
+<main id="obsah"><p class="narrow muted">Načítám…</p></main>
+<footer class="foot">
+  <span class="brand-word">Famáci</span>
+  <nav aria-label="Patička">
+    <a class="foot-gdpr" href="ochrana-soukromi.html">Ochrana soukromí a pravidla</a>
+    <a href="app.html#/nahlasit">Nahlásit zneužití kontaktu</a>
+    <a href="mailto:spravce@example.cz">Kontakt na správce</a>
+  </nav>
+  <p class="foot-note">Prototyp. Všechna jména a čísla v adresáři jsou smyšlená. Famáci 2.0 nejsou oficiálním webem FAMU.</p>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="dlg" aria-labelledby="dlg-title"><div class="dlg" id="dlg-body"></div></dialog>
+</body>
+</html>
