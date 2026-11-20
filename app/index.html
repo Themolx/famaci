@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Famáci 2.0 · archiv</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#/">Famáci <span>2.0</span></a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-nav="prehled">Přehled</a>
+      <a href="#/katedra/kp" data-nav="katedra">Katedry</a>
+      <a href="#/hledat" data-nav="hledat">Hledat</a>
+      <a href="#/historie/kp" data-nav="historie">Historie</a>
+      <a href="#/statistiky" data-nav="statistiky">Statistiky</a>
+    </nav>
+    <form class="search" id="search-form" role="search">
+      <input id="q" type="search" placeholder="Hledat jméno, katedru, ročník…" autocomplete="off" aria-label="Hledat">
+    </form>
+    <label class="reveal" title="Telefony a e-maily jsou ve výchozím stavu skryté">
+      <input type="checkbox" id="reveal"> <span>Ukázat kontakty</span>
+    </label>
+  </div>
+  <div class="privacy" id="privacy">
+    Pouze lokálně · osobní údaje studentů z archivu famaci.estranky.cz (2008 až 2025). Nesdílet, nenahrávat, nepublikovat.
+  </div>
+</header>
+<main id="app" class="wrap" tabindex="-1">
+  <p class="muted">Načítám data…</p>
+</main>
+<footer class="foot wrap">
+  Zdroj: Wayback Machine. Data sestavuje <code>build_data.py</code> z <code>data/extracted</code>. Odkazy „Wayback“ otevírají web.archive.org.
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

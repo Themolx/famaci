@@ -1,0 +1,14 @@
+# Skutečná data z archivu = osobní údaje studentů. Nikdy do gitu.
+data/
+app/data/
+v2/data/
+v2/outbox/
+*.db
+*.sqlite*
+
+# lokální
+.claude/
+__pycache__/
+*.pyc
+.DS_Store
+_site/
