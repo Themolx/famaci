@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Nic osobního nesmí ven
-        run: python3 -I tools/check_public.py demo app v2 tools README.md CONTRIBUTING.md BRAINSTORM.md
+        run: python3 -I tools/check_public.py demo app v2 tools README.md CONTRIBUTING.md BRAINSTORM.md AGENTS.md CLAUDE.md
       - name: Sestavit web z app/ a demo dat
         run: |
           mkdir -p _site/data

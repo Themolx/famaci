@@ -22,6 +22,7 @@ Archiv obsahuje skutečná jména a telefony asi 1 700 studentů. **Tahle data v
 | `demo/` | smyšlená data pro Pages a pro vývoj bez skutečných dat |
 | `v2/` | **prototyp nového adresáře**: Python server (jen standardní knihovna) + SQLite, přihlášení odkazem na školní mail, profily, projekty, štábová listina, API. Jen lokálně, na Pages neběží |
 | `BRAINSTORM.md` | co byl starý web, nápady a otevřené otázky pro 2.0 |
+| `AGENTS.md` | celý kontext pro AI agenty (Codex, Antigravity, Claude Code přes `CLAUDE.md`) |
 
 ## Rychlý start (demo data, nic nestahuješ)
 
